@@ -13,11 +13,11 @@ for square in squares(N):
 
 def even_nums(n):
     for i in range(0, n+1, 2):
-	yield i
+	    yield i
 
 n = int(input())
 
-print(",", join(str(num) for num in even_nums(n)))
+print(",".join(str(num) for num in even_nums(n)))
 
 # Task-3
 
@@ -34,7 +34,7 @@ for i in divisible_by_3_and_4(n):
 # Task-4
 
 def squares(a, b):
-    for i in range(a, b):
+    for i in range(a, b+1):
     	yield i * i
 
 a = int(input())
